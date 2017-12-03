@@ -127,7 +127,6 @@ header div {
 }
 
 .post { 
-	position: relative;
 	margin-bottom: 50px;
 	padding-left: 2%;
 	color: #272727; 
@@ -290,19 +289,23 @@ img.left:hover {
 	margin-top: -20px
 } 
 
-.pruebas #prueba1 {
-    font-family: 'Bad Script', cursive; 
+
+@media (max-width: 600px) {
+	    body {
+        background: black;
+    }
+
 }
-.pruebas #prueba2 {
-    font-family: 'Unica One', cursive;
-    color: black;
-} 
-.pruebas #prueba3 {
-    font-family: 'Julius Sans One', sans-serif;
-} 
-.pruebas #prueba4 {
-    font-family: 'Carrois Gothic SC', sans-serif;
-} 
-.pruebas #prueba5 {
-    font-family: 'Six Caps', sans-serif;
-} 
+
+@media (max-width: 991px) {
+	    .astro img {
+    	display: none;
+    }
+
+}
+
+@media (max-width: 770px){
+	    	.post .astrogif {
+			display: none;
+    	}
+}
